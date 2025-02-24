@@ -97,7 +97,3 @@ If you encounter any issues:
 - scikit-learn
 - matplotlib-venn
 - adjustText
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
