@@ -1,6 +1,6 @@
 # RNA-seq Visualization Pipeline (Python)
 
-This Python package provides a comprehensive pipeline for visualizing RNA-seq differential expression results from DESeq2, addressing the visualization errors you experienced with the R scripts.
+This Python package provides a comprehensive pipeline for visualizing RNA-seq differential expression results from DESeq2, addressing the visualization errors you experienced with the R scripts. The Python implementation handles the font issues and other errors that occurred in the R version.
 
 ## Features
 
@@ -81,7 +81,8 @@ If you encounter any issues:
 1. Ensure all required files are present in the working directory
 2. Check that all dependencies are installed correctly
 3. Look for error messages in the console output
-4. Adjust memory settings if dealing with large datasets:
+4. If you see font-related warnings ("findfont: Generic family 'sans-serif' not found..."), these are now suppressed automatically in the code and won't affect the plot output
+5. Adjust memory settings if dealing with large datasets:
    ```
    export PYTHONMEM=16G
    python rna_seq_visualizer.py
